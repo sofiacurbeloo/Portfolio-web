@@ -1,0 +1,51 @@
+// Projects
+.projects {
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-family: 'Virust', sans-serif;
+    font-size: $font-size-heading-2;
+  }
+}
+
+// Footer
+.footer {
+  margin-top: 5%;
+  height: 90vh;
+  width: 100%;
+  background: url('/images/Footer-img.png') no-repeat center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+
+  h4 {
+    padding-top: 10%;
+    font-size: $font-size-heading-2;
+  }
+
+  p {
+    font-size: $font-size-heading-3;
+  }
+
+  @media (max-width: $break-sm) {
+    background-position: right;
+
+    h4 {
+      font-size: $font-size-heading-4;
+    }
+
+    p {
+      font-size: $font-size-body-lg;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// Configuracion inicial
+@import './base/settings';
+@import './base/reset';
+
+
+/*    -- ESTILOS COMPONENTES --  */
+
+@import './components/snippet'; // Estilos pantalla de carga
+@import './components/button'; // Estilos de los botones
+@import './components/card'; // Estilos las tarjetas
+@import './components/navbar'; // Estilos del navbar
+@import './components/main'; // Estilos del main y del header
+@import './components/about'; // Estilos del about
+@import './components/projects-footer'; // Estilos del projects y footer
+

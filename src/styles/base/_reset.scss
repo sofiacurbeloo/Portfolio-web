@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $font-primary;
+  background-color: $color-dark-violet;
+  color: $color-white;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+// Margin contenedor
+.main,
+.about,
+.projects {
+  margin: 0 90px;
+ 
+  // Tabletas
+  @media (max-width: $break-md) {
+    margin: 0 60px;
+  }
+
+  // Móviles
+  @media (max-width: $break-sm) {
+    margin: 0 30px;
+  }
+}
+
+button {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}

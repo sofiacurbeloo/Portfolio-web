@@ -1,0 +1,80 @@
+// Colores
+$color-white: #eaeaea;
+$color-grey: #a4a4a4;
+$color-sky-grey: #a0a1b3;
+$color-dark-violet: #1f1e2b;
+$color-black: #000000;
+$color-dark: #161320;
+$color-violet: #7a00f9;
+$color-light-violet: #a24aff;
+$color-pink: #ff00d9;
+
+// Gradiente para botón 'extra'
+$gradient-violet: radial-gradient(
+  70.31% 50% at 50% 50%,
+  #1d0d33 0%,
+  #171620 100%
+);
+$gradient-hover-violet: radial-gradient(
+  70.31% 50% at 50% 50%,
+  #3b1b65 0%,
+  #171627 100%
+);
+
+// Efectos
+$effect-box-shadow: 0 0 32px rgba($color-violet, 0.4);
+
+// Borde
+$border-radius-10: 10px;
+$border-radius-50: 50px;
+
+// Fuentes
+$montserrat-font-path: '@/assets/fonts/montserrat';
+$virust-font-path: '@/assets/fonts/virust';
+
+// Montserrat Regular
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$montserrat-font-path}/Montserrat-Regular.woff2') format('woff2'),
+    url('#{$montserrat-font-path}/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Montserrat SemiBold
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$montserrat-font-path}/Montserrat-SemiBold.woff2') format('woff2'),
+    url('#{$montserrat-font-path}/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Virust Regular
+@font-face {
+  font-family: 'Virust';
+  src: url('#{$virust-font-path}/Virust-Regular.woff2') format('woff2'),
+    url('#{$virust-font-path}/Virust-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Familia
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Virust', sans-serif;
+// Tamaño
+$font-size-heading-1: 5rem;
+$font-size-heading-2: 3rem;
+$font-size-heading-3: 2.5rem;
+$font-size-heading-4: 1.85rem;
+$font-size-body-lg: 1.5rem;
+$font-size-body-md: 1.25rem;
+$font-size-body-sm: 1rem;
+$font-size-body-xs: 0.75rem;
+
+// Breakpoints
+$break-sm: 576px;
+$break-md: 992px;

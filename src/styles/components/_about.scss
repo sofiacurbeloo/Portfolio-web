@@ -1,0 +1,194 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  padding: 90px 24px;
+  background-color: $color-dark;
+  border-radius: 50px;
+
+  .about-description {
+    display: flex;
+    gap: 48px;
+    height: fit-content;
+
+    .about-title-mobile {
+      display: none;
+    }
+
+    .about-img,
+    .about-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-img {
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      figcaption {
+        text-align: center;
+        color: $color-violet;
+        font-size: $font-size-heading-4;
+        font-weight: 100;
+      }
+    }
+
+    .about-text {
+      justify-content: space-evenly;
+      gap: 32px;
+
+      h2 {
+        font-family: 'Virust', sans-serif;
+        font-size: $font-size-heading-2;
+      }
+
+      p {
+        font-size: $font-size-body-lg;
+
+        span {
+          font-weight: 700;
+        }
+      }
+
+      a {
+        width: 40%;
+        color: $color-black;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .about-tech {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+
+    h3 {
+      font-size: $font-size-heading-3;
+      color: $color-pink;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .about-tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+      justify-content: center;
+      align-items: center;
+
+      .tech-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 150px;
+        gap: 12px;
+
+        svg {
+          width: 90%;
+          height: 90%;
+        }
+
+        p {
+          font-size: $font-size-body-lg;
+        }
+      }
+    }
+  }
+
+  .about-additional-text {
+    text-align: center;
+    font-size: $font-size-body-lg;
+  }
+
+  // Tabletas
+  @media (max-width: $break-md) {
+    gap: 90px;
+    padding: 10px;
+
+    .about-description {
+      gap: 60px;
+
+      .about-img,
+      .about-text {
+        width: 100%;
+      }
+
+      .about-text {
+        h2 {
+          font-size: $font-size-heading-3;
+        }
+
+        p {
+          font-size: $font-size-body-sm;
+        }
+
+        a {
+          width: 90%;
+        }
+      }
+    }
+
+    .about-tech-stack {
+      gap: 60px;
+
+      .tech-item {
+        width: 120px;
+
+        p {
+          font-size: $font-size-body-md;
+        }
+      }
+    }
+  }
+
+  // Móviles
+  @media (max-width: $break-sm) {
+    .about-description {
+      flex-direction: column;
+      align-items: center;
+
+      .about-title-mobile {
+        display: block;
+        font-family: 'Virust', sans-serif;
+        font-size: $font-size-heading-2;
+        text-align: center;
+      }
+
+      h2 {
+        display: none;
+      }
+    }
+
+    .about-tech {
+      gap: 30px;
+
+      h3 {
+        font-size: $font-size-heading-4;
+      }
+
+      .about-tech-stack {
+        gap: 24px;
+
+        .tech-item {
+          width: 90px;
+
+          p {
+            font-size: $font-size-body-sm;
+          }
+        }
+      }
+    }
+
+    .about-additional-text {
+      font-size: $font-size-body-md;
+    }
+  }
+}

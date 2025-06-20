@@ -1,0 +1,130 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  gap: 10px;
+
+  .hero-img {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    opacity: 0.08;
+  }
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    gap: 24px;
+
+    .main-text-sm {
+      font-size: $font-size-heading-4;
+      text-align: center;
+
+      &:first-child {
+        color: $color-violet;
+      }
+    }
+
+    .main-title {
+      font-family: 'Virust', sans-serif;
+      font-size: $font-size-heading-1;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    .main-badge {
+      font-size: $font-size-body-lg;
+      color: $color-violet;
+      padding: 16px;
+      border: 1px solid $color-violet;
+      border-radius: 5px;
+      width: fit-content;
+      text-align: center;
+    }
+
+    .main-contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 250px;
+
+      padding: 16px 0;
+
+      a {
+        height: 100%;
+
+        svg {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  // Tabletas
+  @media (max-width: $break-md) {
+    .hero-img {
+      top: 25%;
+    }
+
+    .main-header {
+      width: 81%;
+      gap: 10px;
+
+      .main-text-sm {
+        font-size: $font-size-body-md;
+      }
+
+      .main-title {
+        font-size: $font-size-heading-2;
+      }
+
+      .main-badge {
+        font-size: $font-size-body-sm;
+        padding: 12px;
+      }
+
+      .main-contact {
+        width: 210px;
+        a {
+          height: 100%;
+          svg {
+            height: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  // Móviles
+  @media (max-width: $break-sm) {
+    .main-header {
+      .main-text-sm {
+        font-size: $font-size-body-sm;
+      }
+
+      .main-title {
+        font-size: $font-size-heading-4;
+      }
+
+      .main-badge {
+        font-size: $font-size-body-xs;
+        padding: 12px;
+      }
+
+      .main-contact {
+        width: 150px;
+        a {
+          height: 100%;
+          svg {
+            height: 70%;
+          }
+        }
+      }
+    }
+  }
+}
