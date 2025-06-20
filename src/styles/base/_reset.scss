@@ -23,16 +23,16 @@ body {
 .main,
 .about,
 .projects {
-  margin: 0 90px;
+  margin: 0 3.74rem;
  
   // Tabletas
   @media (max-width: $break-md) {
-    margin: 0 60px;
+    margin: 0 2.5rem
   }
 
   // Móviles
   @media (max-width: $break-sm) {
-    margin: 0 30px;
+    margin: 0 1.25rem;
   }
 }
 
