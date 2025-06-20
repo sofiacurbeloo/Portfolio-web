@@ -2,7 +2,7 @@
   display: flex;
   position: fixed;
   background-color: $color-dark-violet;
-  padding: 1rem 90px;
+  padding: 0.6rem 3.75rem;
  
   width: 100%;
   z-index: 2;
@@ -15,7 +15,7 @@
   }
 
   .nav-logo-img {
-    height: 40px;
+    height: 1.8rem;
   }
 
   .nav-toggle {
@@ -27,14 +27,14 @@
 
   .nav-link-list {
     display: flex;
-    gap: 60px;
+    gap: 2.1rem;
     align-items: center;
 
     .nav-link {
       align-items: center;
       position: relative;
       display: inline-flex;
-      gap: 10px;
+      gap: 0.6rem;
       font-size: $font-size-body-md;
       white-space: nowrap;
 
@@ -42,7 +42,7 @@
       &::after {
         content: '';
         position: absolute;
-        bottom: -4px;
+        bottom: -0.25rem;
         left: 0;
         height: 1px;
         width: 100%;
@@ -60,11 +60,11 @@
 
   // Tabletas
    @media (max-width: $break-md){
-     padding: 1rem 60px;
+     padding: 1rem 3.75rem;
    }
   // Móviles
   @media (max-width: $break-sm) {
-    padding: 1rem 30px;
+    padding: 1rem 1.8rem;
     align-items: flex-start;
     flex-direction: column;
 
@@ -81,9 +81,9 @@
       display: none;
       flex-direction: column;
       width: 100%;
-      margin-top: 36px;
-      padding: 24px 0;
-      gap: 40px;
+      margin-top: 1.25rem;
+      padding: 1.5rem 0;
+      gap: 2.5rem;
       animation: slideDown 0.2s ease-out forwards;
       z-index: 10;
 
