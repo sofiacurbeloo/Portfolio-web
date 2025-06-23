@@ -1,19 +1,15 @@
 {
-    "projects": [
-      {
-        "title": "E-commerce",
-        "description": "E-commerce simula una tienda en línea desarrollada con enfoque front-end. Incluye navegación por categorías, filtros de búsqueda, ordenamiento de productos, inicio de sesión simulado, edición de perfil, carrito de compras y sistema de reseñas. Se obtienen datos desde una API para brindar una experiencia interactiva.",
-        "tech": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
-        ],
-        "image": "/images/E-commerce.png",
-        "link": "https://sofiacurbeloo.github.io/e-commerceJaP/",
-        "repo": "https://github.com/sofiacurbeloo/e-commerceJaP"
-      }
-    ]
-  }
-
-
+  "projects": [
+    {
+      "title": "E-commerce",
+      "description": "E-commerce simula una tienda en línea desarrollada con enfoque front-end. Incluye navegación por categorías, filtros de búsqueda, ordenamiento de productos, inicio de sesión simulado, edición de perfil, carrito de compras y sistema de reseñas. Se obtienen datos desde una API para brindar una experiencia interactiva.",
+      "tech": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      "image": "/images/E-commerce.png",
+      "link": "https://sofiacurbeloo.github.io/e-commerceJaP/",
+      "repo": "https://github.com/sofiacurbeloo/e-commerceJaP"
+    },
+    {
+      "subtitle": "En construcción"
+    }
+  ]
+}
