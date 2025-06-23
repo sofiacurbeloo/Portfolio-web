@@ -13,9 +13,23 @@
   &-content {
     display: flex;
     align-items: center;
-    align-self: stretch;
+    // align-self: stretch;
     gap: 0.75rem;
     height: 100%;
+
+    .project-onbuild {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h4 {
+          font-size: $font-size-heading-3;
+        }
+        svg {
+          height: 70px;
+        }
+      }
 
     .card-info {
       display: flex;
@@ -33,6 +47,7 @@
       p {
         font-size: $font-size-body-md;
       }
+      
     }
 
     .card-button {
