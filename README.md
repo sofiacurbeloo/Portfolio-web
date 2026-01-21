@@ -13,5 +13,6 @@ Este es mi portafolio personal como desarrolladora web. Fue creado con React, Vi
 - Framer Motion
 - JSON para manejo de datos
 
+🔗Puedes visitar la página con el siguiente link: https://sofiacurbelo.vercel.app/ 
 
 
